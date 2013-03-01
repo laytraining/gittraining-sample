@@ -21,6 +21,7 @@ import org.eclipse.example.calc.internal.operations.Square;
 /**
  * 
  * @author Wrobel
+ * 
  *
  */
 public class Calculator {
