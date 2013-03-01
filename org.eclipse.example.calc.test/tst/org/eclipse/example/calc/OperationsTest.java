@@ -18,6 +18,7 @@ import org.eclipse.example.calc.internal.operations.Plus;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class OperationsTest {
@@ -68,6 +69,12 @@ public class OperationsTest {
 			Operation op = Operations.INSTANCE.getOperation(name);
 			assertEquals(name, op.getName());
 		}
+	}
+
+	@Test
+	@Ignore
+	public void testDummy() {
+		// NOP
 	}
 
 }
