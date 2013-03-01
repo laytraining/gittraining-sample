@@ -17,6 +17,7 @@ import org.eclipse.example.calc.internal.operations.Equals;
 import org.eclipse.example.calc.internal.operations.Minus;
 import org.eclipse.example.calc.internal.operations.Multiply;
 import org.eclipse.example.calc.internal.operations.Plus;
+import org.eclipse.example.calc.internal.operations.Pow;
 import org.eclipse.example.calc.internal.operations.Square;
 import org.eclipse.example.calc.internal.operations.Squareroot;
 
@@ -24,7 +25,7 @@ import org.eclipse.example.calc.internal.operations.Squareroot;
  * 
  * @author Wrobel
  * 
- *
+ * 
  */
 public class Calculator {
 
@@ -50,6 +51,7 @@ public class Calculator {
 		new Square();
 		new Multiply();
 		new Squareroot();
+		new Pow();
 	}
 
 	private void calculate(String cmdName) {
@@ -112,7 +114,8 @@ public class Calculator {
 				}
 
 				// add new digit to display
-				textProvider.setDisplayText(textProvider.getDisplayText() + digit);
+				textProvider.setDisplayText(textProvider.getDisplayText()
+						+ digit);
 			}
 		}
 	}
