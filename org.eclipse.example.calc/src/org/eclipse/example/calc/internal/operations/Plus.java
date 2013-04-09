@@ -22,7 +22,7 @@ public class Plus extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public String getName() {
-		return "+";
+		return "Plus";
 	}
 
 }
