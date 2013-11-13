@@ -21,6 +21,8 @@ public class Plus extends AbstractOperation implements BinaryOperation {
 		return arg1 + arg2;
 	}
 
+	
+	// meaningless comment
 	@Override
 	public String getName() {
 		return "+";
