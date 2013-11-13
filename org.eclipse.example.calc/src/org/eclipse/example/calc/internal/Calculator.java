@@ -42,7 +42,9 @@ public class Calculator {
 		new Minus();
 		new Plus();
 		new Square();
+		// Add power operation.
 		new Power();
+		// Add multiply operation.
 		new Multiply();
 	}
 
