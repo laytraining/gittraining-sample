@@ -50,15 +50,27 @@
 
   <properties>
     <calc-version>0.1.0-SNAPSHOT</calc-version>
-    <tycho-version>2.2.0</tycho-version>
+    <tycho-version>2.6.0</tycho-version>
     <junit-version>4.8.1</junit-version>
   </properties>
 
   <profiles>
     <profile>
-      <id>platform-oxygen</id>
+      <id>platform-2021-12</id>
       <activation>
         <activeByDefault>true</activeByDefault>
+        <property>
+          <name>platform-version-name</name>
+          <value>2021-12</value>
+        </property>
+      </activation>
+      <properties>
+        <eclipse-site>http://download.eclipse.org/releases/2021-12</eclipse-site>
+      </properties>
+    </profile>
+    <profile>
+      <id>platform-oxygen</id>
+      <activation>
         <property>
           <name>platform-version-name</name>
           <value>oxygen</value>
@@ -66,18 +78,6 @@
       </activation>
       <properties>
         <eclipse-site>http://download.eclipse.org/releases/oxygen</eclipse-site>
-      </properties>
-    </profile>
-    <profile>
-      <id>platform-neon</id>
-      <activation>
-        <property>
-          <name>platform-version-name</name>
-          <value>neon</value>
-        </property>
-      </activation>
-      <properties>
-        <eclipse-site>http://download.eclipse.org/releases/neon</eclipse-site>
       </properties>
     </profile>
  
@@ -115,17 +115,7 @@
             <environment>
               <os>linux</os>
               <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
               <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86</arch>
             </environment>
             <environment>
               <os>win32</os>
